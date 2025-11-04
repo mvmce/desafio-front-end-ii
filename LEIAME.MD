@@ -18,9 +18,9 @@ O objetivo é criar um pequeno site composto por \*\*três páginas interligadas
 
 🔗 \*\*GitHub Pages:\*\*  
 
-➡️ \[https://mvmce.github.io/desafio-front-end-ii/](https://mvmce.github.io/desafio-front-end-ii/)
+➡️ \[https://mvmce.github.io/desafio-front-end-ii/)
 
-
+https://github.com/mvmce/desafio-front-end-ii/tree/main
 
 ---
 
