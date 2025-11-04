@@ -1,0 +1,178 @@
+/* === Fonte elegante === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* === Estilo Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* === Cabeçalho === */
+header {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  color: #f8fafc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 1.85rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+header h2, header p {
+  font-weight: 400;
+  opacity: 0.9;
+  color: #e2e8f0;
+}
+
+/* === Conteúdo principal === */
+main {
+  background-color: #f8fafc;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  margin-top: 45px;
+  text-align: center;
+  animation: surgir 0.5s ease-in-out;
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Formulário === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  text-align: left;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background-color: #f1f5f9;
+}
+
+input:focus {
+  border-color: #f59e0b;
+  outline: none;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.4);
+}
+
+/* === Botões === */
+.botao {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  border: none;
+  padding: 13px;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+.botao:active {
+  transform: scale(0.97);
+}
+
+/* === Mensagens e blocos === */
+#mensagem-erro {
+  color: #b91c1c;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#dados {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* === INDEX específico === */
+.container-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(48vh - 42px);
+}
+
+.caixa-index {
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  animation: surgir 0.6s ease-in-out;
+}
+
+.caixa-index p {
+  color: #475569;
+  font-size: 1.0rem;
+  line-height: 2.1;
+  margin-bottom: 30px;
+}
+
+.caixa-index strong {
+  color: #f59e0b;
+}
+
+/* === Responsividade === */
+@media (max-width: 480px) {
+  main {
+    width: 95%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 10.6rem;
+  }
+}
